@@ -3,9 +3,9 @@ import { json } from "@remix-run/node";
 import { Form, useActionData } from "@remix-run/react";
 import {
   getPermissionsFromInputs,
-  PERMISSIONS,
   verifyPermission,
 } from "~/helpers/permissions";
+import { PERMISSIONS } from "~/constants/permissions";
 
 import { createUser, getUserByEmail } from "~/models/user.server";
 import { validateEmail } from "~/helpers/utils";

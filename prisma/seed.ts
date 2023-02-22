@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
-import { MENU } from "~/helpers/permissions";
+import { MENU } from "~/constants/permissions";
 
 const prisma = new PrismaClient();
 
@@ -21,7 +21,7 @@ seed()
 async function createDefaultUsers() {
   const name = "admin";
   const email = "admin@vothsolutions.com";
-  const password = "asd123";
+  const password = "asdf1234";
   const permissions = MENU.map((menu) => [menu.id, 2]);
 
   await prisma.user.delete({ where: { email } }).catch(() => {});

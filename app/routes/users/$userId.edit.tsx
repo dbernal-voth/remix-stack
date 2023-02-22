@@ -12,10 +12,10 @@ import { getUserById, updateUser, disableUser } from "~/models/user.server";
 import { errorResp, successfulResp } from "~/helpers/responses";
 import type { Permission } from "~/helpers/permissions";
 import {
-  getPermissionsFromInputs,
-  PERMISSIONS,
+  getPermissionsFromInputs, 
   verifyPermission,
 } from "~/helpers/permissions";
+import { PERMISSIONS } from '~/constants/permissions'
 
 import Page from "~/components/Page";
 import UserForm from "~/components/Forms/UserForm";

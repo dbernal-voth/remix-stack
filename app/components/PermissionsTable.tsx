@@ -1,5 +1,5 @@
 import { Radio, Table } from "flowbite-react";
-import { MENU } from "~/helpers/permissions";
+import { MENU } from "~/constants/permissions";
 
 interface IProps {
   permissions?: Array<[string, number]>;

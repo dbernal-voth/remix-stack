@@ -1,7 +1,8 @@
 import type { ActionArgs, LoaderArgs, MetaFunction } from "@remix-run/node";
 import { Link, useActionData } from "@remix-run/react";
 import { json } from "@remix-run/node";
-import { PERMISSIONS, verifyPermission } from "~/helpers/permissions";
+import { verifyPermission } from "~/helpers/permissions";
+import { PERMISSIONS } from '~/constants/permissions'
 import { searchUsers } from "~/models/user.server";
 import { formatDate } from "~/helpers/format";
 import SearchForm from "~/components/Forms/SearchForm";
